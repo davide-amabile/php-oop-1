@@ -6,7 +6,7 @@ public $surname;
 public $nation;
 public $number;
 public $role;
-}
+
 
 // creare funzione constructor
 function __constructor($_surname, $_nation, $_number, $_role)
@@ -17,8 +17,10 @@ function __constructor($_surname, $_nation, $_number, $_role)
     $this->role=$_role;
 }
 
+}
+
 // creiamo gli oggetti
-$player1= new User("Julio Cesar", "Brasile", "12", "Portiere");
+$player1 = new User("Julio Cesar", "Brasile", "12", "Portiere");
 var_dump($player1);
 
 
