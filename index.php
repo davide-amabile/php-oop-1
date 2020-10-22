@@ -8,7 +8,8 @@ public $number;
 public $role;
 
 
-// creare funzione constructor
+// creare funzione construct
+// N.B.: la funzione è dentro la classe
 function __construct($_surname, $_nation, $_number, $_role)
 {
     $this->surname=$_surname;
@@ -32,7 +33,7 @@ $player9 = new User("Eto'o", "Camerun", "4", "Ala");
 $player10 = new User("Sneijder", "Olanda", "10", "Trequartista");
 $player11 = new User("Milito", "Argentina", "4", "Punta");
 
-// creare array con igiocatori
+// creare array con gli oggetti
 $players = [
     $player1,
     $player2,
@@ -44,7 +45,7 @@ $players = [
     $player8,
     $player9,
     $player10,
-    $player11,
+    $player11
 ];
 
 ?>
@@ -59,7 +60,7 @@ $players = [
 </head>
 <body>
     <h1>FORMAZIONE INTER FINALE CHAMPIONS LEAGUE 2010</h1>
-    <!-- creare ciclo foreach -->
+    <!-- creare ciclo foreach per iniettare gli attributi nel html-->
     <div class="container">
         <?php foreach ($players as $key) { ?>
             <div class="box">
