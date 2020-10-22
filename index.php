@@ -31,7 +31,7 @@ $player8 = new User("Pandev", "Macedonia", "27", "Ala");
 $player9 = new User("Eto'o", "Camerun", "4", "Ala");
 $player10 = new User("Sneijder", "Olanda", "10", "Trequartista");
 $player11 = new User("Milito", "Argentina", "4", "Punta");
-var_dump($player10);
+
 // creare array con igiocatori
 $players = [
     $player1,
@@ -47,7 +47,35 @@ $players = [
     $player11,
 ];
 
-var_dump($players);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inter Finale 2010</title>
+</head>
+<body>
+    <h1>FORMAZIONE INTER FINALE CHAMPIONS LEAGUE 2010</h1>
+    <!-- creare ciclo foreach -->
+    <div class="container">
+        <?php foreach ($players as $key) { ?>
+            <div class="box">
+                <ul class="lista">
+                    <li>GIocatore: <?php echo $key->surname ?></li>
+                    <li>Numero: <?php echo $key->number ?></li>
+                    <li>Ruolo: <?php echo $key->role ?></li>
+                    <li>Nazione: <?php echo $key->nation ?></li>
+                </ul>
+            </div>
+        <?php } ?>
+    </div>
+    
+    
+</body>
+</html>
 
 
 

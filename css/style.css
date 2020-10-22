@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: O
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width:25%;
+    text-align: center;
+    padding: 15px;
+    margin: 25px 25px;
+}
+
+.lista li{
+    list-style: none;
+}
+
